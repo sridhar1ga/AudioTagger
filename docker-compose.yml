@@ -5,7 +5,7 @@ services:
     # This Dockerfile is for development
     build:
       context: .
-      dockerfile: ./Dockerfile.pipeline
+      dockerfile: ./Dockerfile
     volumes:
       - ./:/VrtParserPipeline
     image: sridhar1ga/audio_tagging_parser:latest
