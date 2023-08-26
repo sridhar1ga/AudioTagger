@@ -59,7 +59,7 @@ def process_vrt(vrt_file, mp4_file, output_folder):
 
     sentences = soup.find_all('s')
 
-    cmd = ['ffmpeg','-i', mp4_file, '-ac', '1', '-acodec', 'pcm_s16le', '-ar','16000', '-f', 'wav', '-']
+    cmd = ['ffmpeg', '-hide_banner', '-loglevel', 'warning','-i', mp4_file, '-ac', '1', '-acodec', 'pcm_s16le', '-ar','16000', '-f', 'wav', '-']
     proc = subprocess.Popen(cmd,stdout=subprocess.PIPE)
     output= proc.communicate()[0]
     audio_file = AudioSegment(output, sample_width=2,channels=1,frame_rate=16000)

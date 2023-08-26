@@ -11,6 +11,5 @@ source process_vrt.sh
 
 for f in $(find $1 -type f -name *.vrt.gz); do
 	process_audio $1 $2 $3 $f
-	echo $f
 done
 
