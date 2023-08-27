@@ -9,9 +9,10 @@ RUN apt-get update -y \
 
 RUN pip install --no-cache --upgrade pip setuptools
 
-RUN pip install lxml pydub 
+RUN pip install beautifulsoup4 lxml pydub 
 
 WORKDIR /VrtParserPipeline
 
 ADD ./VrtParserPipeline .
 
+ENTRYPOINT ["bash", "/scratch/users/sxv499/2016", "/scratch/users/sxv499/tv_output", "/mnt/rds/redhen/gallina/tv/2016"]
