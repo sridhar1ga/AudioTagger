@@ -5,7 +5,6 @@
 # $4 --> vrt.gz file path
 
 process_audio(){
-    #f=/mnt/rds/redhen/gallina/projects/vrt_files_2016/2016-01/2016-01-01/2016-01-01_0837_US_KABC_Nightline.v4.vrt.gz
 	f=$4
 	SCRATCH_PATH=/scratch/users/sxv499
 	GALLINA_OUTPUT_PATH=/mnt/rds/redhen/gallina/home/sxv499/tv_output
