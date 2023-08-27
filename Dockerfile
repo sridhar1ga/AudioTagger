@@ -15,4 +15,4 @@ WORKDIR /VrtParserPipeline
 
 ADD ./VrtParserPipeline .
 
-ENTRYPOINT ["bash", "VrtParserPipeline/hello.sh", "/scratch/users/sxv499/2016", "/scratch/users/sxv499/tv_output", "/mnt/rds/redhen/gallina/tv/2016"]
+ENTRYPOINT ["bash", "/VrtParserPipeline/hello.sh", "/scratch/users/sxv499/2016", "/scratch/users/sxv499/tv_output", "/mnt/rds/redhen/gallina/tv/2016"]
